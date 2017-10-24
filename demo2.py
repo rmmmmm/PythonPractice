@@ -10,12 +10,14 @@ new_tu = ()
 new_dic = {}
 for l in li:
     l = l.strip(' ')
+
     if l.startswith('a') or (l.startswith('A') and l.endswith('c')):
         new_li.append(l)
 print(new_li)
 
 for t in tu:
     t = t.strip(' ')
+    #capitalize():把字母不分大小写匹配
     if t.capitalize().startswith('A') and t.endswith('c'):
         new_tu = list(new_tu)
         new_tu.append(t)
@@ -25,5 +27,4 @@ for key in dic:
     dic[key] = dic[key].strip(' ')
     if (dic[key].startswith('a') or dic[key].startswith('A')) and dic[key].endswith('c'):
         new_dic[key]=dic[key]
-# 如何给一个字典加值
 print(new_dic)
