@@ -8,23 +8,24 @@ dic = {'k1': "alec", 'k2': ' aric', "k3": "Alex", "k4": "Tony"}
 new_li = []
 new_tu = ()
 new_dic = {}
+#数组
 for l in li:
     l = l.strip(' ')
 
     if l.startswith('a') or (l.startswith('A') and l.endswith('c')):
         new_li.append(l)
 print(new_li)
-
+#元组
 for t in tu:
     t = t.strip(' ')
-    #capitalize():把字母不分大小写匹配
+    # capitalize():把字母不分大小写匹配
     if t.capitalize().startswith('A') and t.endswith('c'):
         new_tu = list(new_tu)
         new_tu.append(t)
 print(new_tu)
-
+#字典
 for key in dic:
     dic[key] = dic[key].strip(' ')
     if (dic[key].startswith('a') or dic[key].startswith('A')) and dic[key].endswith('c'):
-        new_dic[key]=dic[key]
+        new_dic[key] = dic[key]
 print(new_dic)
