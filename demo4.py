@@ -1,5 +1,5 @@
 #demo4:
-#some knowledge about selenium
+#some knowledge about selenium,等待和键盘
 
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
