@@ -6,7 +6,7 @@ import random
 mystring = string.digits + string.ascii_letters
 
 # "with open as"的mode默认为'r', 所以后面不设置可写模式的话，因为是初次建立此文件，所以会报错：找不到这个文件；
-# 如果可写的话，会自动建立这个文件在里面写入东西，也就能找到这个文件了，也就不会报错了
+# 如果设置为可写的话，会自动建立这个文件在里面写入东西，也就能找到这个文件了，也就不会报错了
 with open("code.txt", 'w') as code:
     for i in range(10):
         # "".join 这个方法可以把list中的元素合在一起变为字符串
